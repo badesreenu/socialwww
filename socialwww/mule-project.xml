@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mule-project xmlns="http://www.mulesoft.com/tooling/project" runtimeId="org.mule.tooling.server.3.5.0.ee" schemaVersion="3.5.0.0">
+    <name>socialwww</name>
+    <description></description>
+    <muleExtension name="Twitter" qualifier="org.mule.tooling.ui.contribution.twitter.3.5.0"/>
+    <muleExtension name="LinkedIn" qualifier="org.mule.tooling.ui.contribution.linkedin"/>
+</mule-project>
