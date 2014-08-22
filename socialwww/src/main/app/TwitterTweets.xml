@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:data-mapper="http://www.mulesoft.org/schema/mule/ee/data-mapper" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:twitter="http://www.mulesoft.org/schema/mule/twitter" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.5.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/twitter http://www.mulesoft.org/schema/mule/twitter/current/mule-twitter.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/ee/data-mapper http://www.mulesoft.org/schema/mule/ee/data-mapper/current/mule-data-mapper.xsd">
+    <flow name="TwitterTweetsFlow1" doc:name="TwitterTweetsFlow1">
+        <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8082" doc:name="HTTP"/>
+        <twitter:get-mentions-timeline config-ref="Twitter" count="200" doc:name="Twitter"/>
+        <logger level="INFO" doc:name="Logger" message="Get Mentioned Time Line : #[payload]"/>
+    </flow>
+    <flow name="TwitterTweetsFlow2" doc:name="TwitterTweetsFlow2">
+        <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8083" doc:name="HTTP"/>
+        <twitter:get-home-timeline config-ref="Twitter" doc:name="Twitter" count="200"/>
+        <logger message="Get Home Time Line : #[payload]" level="INFO" doc:name="Logger"/>
+    </flow>
+    <flow name="TwitterTweetsFlow3" doc:name="TwitterTweetsFlow3">
+        <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8084" doc:name="HTTP"/>
+        <twitter:get-user-timeline-by-screen-name config-ref="Twitter" screenName="WHISHWORKS" count="200" doc:name="Twitter"/>
+        <logger message="Get User Time Line by screen Name : #[payload]" level="INFO" doc:name="Logger"/>
+    </flow>
+    <flow name="TwitterTweetsFlow4" doc:name="TwitterTweetsFlow4">
+        <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8085" doc:name="HTTP"/>
+        <twitter:search config-ref="Twitter" query="@WHISHWORKS" since="2014-03-23" doc:name="Twitter"/>
+        <json:object-to-json-transformer doc:name="Object to JSON"/>
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+    </flow>
+</mule>

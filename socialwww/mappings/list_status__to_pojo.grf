@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph __version="3.5.0" author="sbade" created="Thu Aug 21 10:21:39 IST 2014" description="List&lt;Status&gt; To Pojo" guiVersion="3.4.4.P" id="1408616884375" licenseCode="Unlicensed" licenseType="Unknown" modified="Thu Aug 21 10:21:39 IST 2014" modifiedBy="sbade" name="List_Status__To_Pojo" revision="1.0" showComponentDetails="false">
+<Global>
+<Metadata __index="12" __referenceCounter="0" __sourcePath="{}/list/place/containedWithIn" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="2839de30-145a-4fd4-9af9-196f9c1c8707" _parent_id="__parent_id" _type="Input" id="9e49dff1-3d2c-48b7-a0e2-c17e51dc7a1b">
+<Record fieldDelimiter="," name="containedWithIn" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="44" __referenceCounter="0" __sourcePath="{}/list/user/descriptionURLEntities" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="2839de30-145a-4fd4-9af9-196f9c1c8707" _parent_id="__parent_id" _type="Input" id="b11d5426-b4e2-42f5-8e48-be9bd4e2bfc9">
+<Record fieldDelimiter="," name="descriptionURLEntities" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="44" __sourcePath="{}/list/user/descriptionURLEntities/URL" containerType="SINGLE" label="URL" name="URL" type="string"/>
+<Field __index="45" __sourcePath="{}/list/user/descriptionURLEntities/displayURL" containerType="SINGLE" label="displayURL" name="displayURL" type="string"/>
+<Field __index="46" __sourcePath="{}/list/user/descriptionURLEntities/end" containerType="SINGLE" label="end" name="end" type="integer"/>
+<Field __index="47" __sourcePath="{}/list/user/descriptionURLEntities/expandedURL" containerType="SINGLE" label="expandedURL" name="expandedURL" type="string"/>
+<Field __index="48" __sourcePath="{}/list/user/descriptionURLEntities/start" containerType="SINGLE" label="start" name="start" type="integer"/>
+</Record>
+</Metadata>
+<Metadata __index="107" __referenceCounter="0" __sourcePath="{}/list/hashtagEntities" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="2839de30-145a-4fd4-9af9-196f9c1c8707" _parent_id="__parent_id" _type="Input" id="cd7f2c74-0de5-442a-8344-54ad7734239f">
+<Record fieldDelimiter="," name="hashtagEntities" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="107" __sourcePath="{}/list/hashtagEntities/end" containerType="SINGLE" label="end" name="end" type="integer"/>
+<Field __index="108" __sourcePath="{}/list/hashtagEntities/start" containerType="SINGLE" label="start" name="start" type="integer"/>
+<Field __index="109" __sourcePath="{}/list/hashtagEntities/text" containerType="SINGLE" label="text" name="text" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="1" __sourcePath="{}/list" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _type="Input" id="2839de30-145a-4fd4-9af9-196f9c1c8707">
+<Record fieldDelimiter="," name="list" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="96" __sourcePath="{}/list/accessLevel" containerType="SINGLE" label="accessLevel" name="accessLevel_2" type="integer"/>
+<Field __index="0" __sourcePath="{}/list/contributors" containerType="list" label="contributors" name="contributors" type="long"/>
+<Field __index="1" __sourcePath="{}/list/createdAt" containerType="SINGLE" label="createdAt" name="createdAt" type="date"/>
+<Field __index="2" __sourcePath="{}/list/currentUserRetweetId" containerType="SINGLE" label="currentUserRetweetId" name="currentUserRetweetId" type="long"/>
+<Field __index="3" __sourcePath="{}/list/favorited" containerType="SINGLE" label="favorited" name="favorited" type="boolean"/>
+<Field __index="4" __sourcePath="{}/list/geoLocation/latitude" containerType="SINGLE" label="latitude" name="latitude" type="number"/>
+<Field __index="5" __sourcePath="{}/list/geoLocation/longitude" containerType="SINGLE" label="longitude" name="longitude" type="number"/>
+<Field __index="6" __sourcePath="{}/list/id" containerType="SINGLE" label="id" name="id" type="long"/>
+<Field __index="7" __sourcePath="{}/list/inReplyToScreenName" containerType="SINGLE" label="inReplyToScreenName" name="inReplyToScreenName" type="string"/>
+<Field __index="8" __sourcePath="{}/list/inReplyToStatusId" containerType="SINGLE" label="inReplyToStatusId" name="inReplyToStatusId" type="long"/>
+<Field __index="9" __sourcePath="{}/list/inReplyToUserId" containerType="SINGLE" label="inReplyToUserId" name="inReplyToUserId" type="long"/>
+<Field __index="10" __sourcePath="{}/list/place/URL" containerType="SINGLE" label="URL" name="URL" type="string"/>
+<Field __index="20" __sourcePath="{}/list/place/accessLevel" containerType="SINGLE" label="accessLevel" name="accessLevel" type="integer"/>
+<Field __index="11" __sourcePath="{}/list/place/boundingBoxType" containerType="SINGLE" label="boundingBoxType" name="boundingBoxType" type="string"/>
+<Field __index="12" __sourcePath="{}/list/place/country" containerType="SINGLE" label="country" name="country" type="string"/>
+<Field __index="13" __sourcePath="{}/list/place/countryCode" containerType="SINGLE" label="countryCode" name="countryCode" type="string"/>
+<Field __index="14" __sourcePath="{}/list/place/fullName" containerType="SINGLE" label="fullName" name="fullName" type="string"/>
+<Field __index="15" __sourcePath="{}/list/place/geometryType" containerType="SINGLE" label="geometryType" name="geometryType" type="string"/>
+<Field __index="16" __sourcePath="{}/list/place/id" containerType="SINGLE" label="id" name="id_1" type="string"/>
+<Field __index="17" __sourcePath="{}/list/place/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="18" __sourcePath="{}/list/place/placeType" containerType="SINGLE" label="placeType" name="placeType" type="string"/>
+<Field __index="21" __sourcePath="{}/list/place/rateLimitStatus/limit" containerType="SINGLE" label="limit" name="limit" type="integer"/>
+<Field __index="22" __sourcePath="{}/list/place/rateLimitStatus/remaining" containerType="SINGLE" label="remaining" name="remaining" type="integer"/>
+<Field __index="23" __sourcePath="{}/list/place/rateLimitStatus/remainingHits" containerType="SINGLE" label="remainingHits" name="remainingHits" type="integer"/>
+<Field __index="24" __sourcePath="{}/list/place/rateLimitStatus/resetTimeInSeconds" containerType="SINGLE" label="resetTimeInSeconds" name="resetTimeInSeconds" type="integer"/>
+<Field __index="25" __sourcePath="{}/list/place/rateLimitStatus/secondsUntilReset" containerType="SINGLE" label="secondsUntilReset" name="secondsUntilReset" type="integer"/>
+<Field __index="19" __sourcePath="{}/list/place/streetAddress" containerType="SINGLE" label="streetAddress" name="streetAddress" type="string"/>
+<Field __index="26" __sourcePath="{}/list/possiblySensitive" containerType="SINGLE" label="possiblySensitive" name="possiblySensitive" type="boolean"/>
+<Field __index="97" __sourcePath="{}/list/rateLimitStatus/limit" containerType="SINGLE" label="limit" name="limit_2" type="integer"/>
+<Field __index="98" __sourcePath="{}/list/rateLimitStatus/remaining" containerType="SINGLE" label="remaining" name="remaining_2" type="integer"/>
+<Field __index="99" __sourcePath="{}/list/rateLimitStatus/remainingHits" containerType="SINGLE" label="remainingHits" name="remainingHits_2" type="integer"/>
+<Field __index="100" __sourcePath="{}/list/rateLimitStatus/resetTimeInSeconds" containerType="SINGLE" label="resetTimeInSeconds" name="resetTimeInSeconds_2" type="integer"/>
+<Field __index="101" __sourcePath="{}/list/rateLimitStatus/secondsUntilReset" containerType="SINGLE" label="secondsUntilReset" name="secondsUntilReset_2" type="integer"/>
+<Field __index="27" __sourcePath="{}/list/retweet" containerType="SINGLE" label="retweet" name="retweet" type="boolean"/>
+<Field __index="28" __sourcePath="{}/list/retweetCount" containerType="SINGLE" label="retweetCount" name="retweetCount" type="long"/>
+<Field __index="29" __sourcePath="{}/list/retweetedByMe" containerType="SINGLE" label="retweetedByMe" name="retweetedByMe" type="boolean"/>
+<Field __index="30" __sourcePath="{}/list/source" containerType="SINGLE" label="source" name="source" type="string"/>
+<Field __index="31" __sourcePath="{}/list/text" containerType="SINGLE" label="text" name="text" type="string"/>
+<Field __index="32" __sourcePath="{}/list/truncated" containerType="SINGLE" label="truncated" name="truncated" type="boolean"/>
+<Field __index="33" __sourcePath="{}/list/user/URL" containerType="SINGLE" label="URL" name="URL_1" type="string"/>
+<Field __index="34" __sourcePath="{}/list/user/URLEntity/URL" containerType="SINGLE" label="URL" name="URL_2" type="string"/>
+<Field __index="35" __sourcePath="{}/list/user/URLEntity/displayURL" containerType="SINGLE" label="displayURL" name="displayURL" type="string"/>
+<Field __index="36" __sourcePath="{}/list/user/URLEntity/end" containerType="SINGLE" label="end" name="end" type="integer"/>
+<Field __index="37" __sourcePath="{}/list/user/URLEntity/expandedURL" containerType="SINGLE" label="expandedURL" name="expandedURL" type="string"/>
+<Field __index="38" __sourcePath="{}/list/user/URLEntity/start" containerType="SINGLE" label="start" name="start" type="integer"/>
+<Field __index="90" __sourcePath="{}/list/user/accessLevel" containerType="SINGLE" label="accessLevel" name="accessLevel_1" type="integer"/>
+<Field __index="39" __sourcePath="{}/list/user/biggerProfileImageURL" containerType="SINGLE" label="biggerProfileImageURL" name="biggerProfileImageURL" type="string"/>
+<Field __index="40" __sourcePath="{}/list/user/biggerProfileImageURLHttps" containerType="SINGLE" label="biggerProfileImageURLHttps" name="biggerProfileImageURLHttps" type="string"/>
+<Field __index="41" __sourcePath="{}/list/user/contributorsEnabled" containerType="SINGLE" label="contributorsEnabled" name="contributorsEnabled" type="boolean"/>
+<Field __index="42" __sourcePath="{}/list/user/createdAt" containerType="SINGLE" label="createdAt" name="createdAt_1" type="date"/>
+<Field __index="43" __sourcePath="{}/list/user/description" containerType="SINGLE" label="description" name="description" type="string"/>
+<Field __index="49" __sourcePath="{}/list/user/favouritesCount" containerType="SINGLE" label="favouritesCount" name="favouritesCount" type="integer"/>
+<Field __index="50" __sourcePath="{}/list/user/followRequestSent" containerType="SINGLE" label="followRequestSent" name="followRequestSent" type="boolean"/>
+<Field __index="51" __sourcePath="{}/list/user/followersCount" containerType="SINGLE" label="followersCount" name="followersCount" type="integer"/>
+<Field __index="52" __sourcePath="{}/list/user/friendsCount" containerType="SINGLE" label="friendsCount" name="friendsCount" type="integer"/>
+<Field __index="53" __sourcePath="{}/list/user/geoEnabled" containerType="SINGLE" label="geoEnabled" name="geoEnabled" type="boolean"/>
+<Field __index="54" __sourcePath="{}/list/user/id" containerType="SINGLE" label="id" name="id_2" type="long"/>
+<Field __index="55" __sourcePath="{}/list/user/lang" containerType="SINGLE" label="lang" name="lang" type="string"/>
+<Field __index="56" __sourcePath="{}/list/user/listedCount" containerType="SINGLE" label="listedCount" name="listedCount" type="integer"/>
+<Field __index="57" __sourcePath="{}/list/user/location" containerType="SINGLE" label="location" name="location" type="string"/>
+<Field __index="58" __sourcePath="{}/list/user/miniProfileImageURL" containerType="SINGLE" label="miniProfileImageURL" name="miniProfileImageURL" type="string"/>
+<Field __index="59" __sourcePath="{}/list/user/miniProfileImageURLHttps" containerType="SINGLE" label="miniProfileImageURLHttps" name="miniProfileImageURLHttps" type="string"/>
+<Field __index="60" __sourcePath="{}/list/user/name" containerType="SINGLE" label="name" name="name_1" type="string"/>
+<Field __index="61" __sourcePath="{}/list/user/originalProfileImageURL" containerType="SINGLE" label="originalProfileImageURL" name="originalProfileImageURL" type="string"/>
+<Field __index="62" __sourcePath="{}/list/user/originalProfileImageURLHttps" containerType="SINGLE" label="originalProfileImageURLHttps" name="originalProfileImageURLHttps" type="string"/>
+<Field __index="63" __sourcePath="{}/list/user/profileBackgroundColor" containerType="SINGLE" label="profileBackgroundColor" name="profileBackgroundColor" type="string"/>
+<Field __index="64" __sourcePath="{}/list/user/profileBackgroundImageURL" containerType="SINGLE" label="profileBackgroundImageURL" name="profileBackgroundImageURL" type="string"/>
+<Field __index="65" __sourcePath="{}/list/user/profileBackgroundImageUrl" containerType="SINGLE" label="profileBackgroundImageUrl" name="profileBackgroundImageUrl" type="string"/>
+<Field __index="66" __sourcePath="{}/list/user/profileBackgroundImageUrlHttps" containerType="SINGLE" label="profileBackgroundImageUrlHttps" name="profileBackgroundImageUrlHttps" type="string"/>
+<Field __index="67" __sourcePath="{}/list/user/profileBackgroundTiled" containerType="SINGLE" label="profileBackgroundTiled" name="profileBackgroundTiled" type="boolean"/>
+<Field __index="68" __sourcePath="{}/list/user/profileBannerIPadRetinaURL" containerType="SINGLE" label="profileBannerIPadRetinaURL" name="profileBannerIPadRetinaURL" type="string"/>
+<Field __index="69" __sourcePath="{}/list/user/profileBannerIPadURL" containerType="SINGLE" label="profileBannerIPadURL" name="profileBannerIPadURL" type="string"/>
+<Field __index="70" __sourcePath="{}/list/user/profileBannerMobileRetinaURL" containerType="SINGLE" label="profileBannerMobileRetinaURL" name="profileBannerMobileRetinaURL" type="string"/>
+<Field __index="71" __sourcePath="{}/list/user/profileBannerMobileURL" containerType="SINGLE" label="profileBannerMobileURL" name="profileBannerMobileURL" type="string"/>
+<Field __index="72" __sourcePath="{}/list/user/profileBannerRetinaURL" containerType="SINGLE" label="profileBannerRetinaURL" name="profileBannerRetinaURL" type="string"/>
+<Field __index="73" __sourcePath="{}/list/user/profileBannerURL" containerType="SINGLE" label="profileBannerURL" name="profileBannerURL" type="string"/>
+<Field __index="74" __sourcePath="{}/list/user/profileImageURL" containerType="SINGLE" label="profileImageURL" name="profileImageURL" type="string"/>
+<Field __index="75" __sourcePath="{}/list/user/profileImageURLHttps" containerType="SINGLE" label="profileImageURLHttps" name="profileImageURLHttps" type="string"/>
+<Field __index="76" __sourcePath="{}/list/user/profileImageUrlHttps" containerType="SINGLE" label="profileImageUrlHttps" name="profileImageUrlHttps" type="string"/>
+<Field __index="77" __sourcePath="{}/list/user/profileLinkColor" containerType="SINGLE" label="profileLinkColor" name="profileLinkColor" type="string"/>
+<Field __index="78" __sourcePath="{}/list/user/profileSidebarBorderColor" containerType="SINGLE" label="profileSidebarBorderColor" name="profileSidebarBorderColor" type="string"/>
+<Field __index="79" __sourcePath="{}/list/user/profileSidebarFillColor" containerType="SINGLE" label="profileSidebarFillColor" name="profileSidebarFillColor" type="string"/>
+<Field __index="80" __sourcePath="{}/list/user/profileTextColor" containerType="SINGLE" label="profileTextColor" name="profileTextColor" type="string"/>
+<Field __index="81" __sourcePath="{}/list/user/profileUseBackgroundImage" containerType="SINGLE" label="profileUseBackgroundImage" name="profileUseBackgroundImage" type="boolean"/>
+<Field __index="82" __sourcePath="{}/list/user/protected" containerType="SINGLE" label="protected" name="protected" type="boolean"/>
+<Field __index="91" __sourcePath="{}/list/user/rateLimitStatus/limit" containerType="SINGLE" label="limit" name="limit_1" type="integer"/>
+<Field __index="92" __sourcePath="{}/list/user/rateLimitStatus/remaining" containerType="SINGLE" label="remaining" name="remaining_1" type="integer"/>
+<Field __index="93" __sourcePath="{}/list/user/rateLimitStatus/remainingHits" containerType="SINGLE" label="remainingHits" name="remainingHits_1" type="integer"/>
+<Field __index="94" __sourcePath="{}/list/user/rateLimitStatus/resetTimeInSeconds" containerType="SINGLE" label="resetTimeInSeconds" name="resetTimeInSeconds_1" type="integer"/>
+<Field __index="95" __sourcePath="{}/list/user/rateLimitStatus/secondsUntilReset" containerType="SINGLE" label="secondsUntilReset" name="secondsUntilReset_1" type="integer"/>
+<Field __index="83" __sourcePath="{}/list/user/screenName" containerType="SINGLE" label="screenName" name="screenName" type="string"/>
+<Field __index="84" __sourcePath="{}/list/user/showAllInlineMedia" containerType="SINGLE" label="showAllInlineMedia" name="showAllInlineMedia" type="boolean"/>
+<Field __index="85" __sourcePath="{}/list/user/statusesCount" containerType="SINGLE" label="statusesCount" name="statusesCount" type="integer"/>
+<Field __index="86" __sourcePath="{}/list/user/timeZone" containerType="SINGLE" label="timeZone" name="timeZone" type="string"/>
+<Field __index="87" __sourcePath="{}/list/user/translator" containerType="SINGLE" label="translator" name="translator" type="boolean"/>
+<Field __index="88" __sourcePath="{}/list/user/utcOffset" containerType="SINGLE" label="utcOffset" name="utcOffset" type="integer"/>
+<Field __index="89" __sourcePath="{}/list/user/verified" containerType="SINGLE" label="verified" name="verified" type="boolean"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="2" __sourcePath="{}/list" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _type="Output" id="db3f7013-1f88-42a9-8464-e56d3ee40b1d">
+<Record fieldDelimiter="," name="list" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="0" __sourcePath="{}/list/createdDate" containerType="SINGLE" label="createdDate" name="createdDate" type="date"/>
+<Field __index="1" __sourcePath="{}/list/id" containerType="SINGLE" label="id" name="id" type="string"/>
+<Field __index="2" __sourcePath="{}/list/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="3" __sourcePath="{}/list/screenName" containerType="SINGLE" label="screenName" name="screenName" type="string"/>
+<Field __index="4" __sourcePath="{}/list/userId" containerType="SINGLE" label="userId" name="userId" type="string"/>
+<Field __index="5" __sourcePath="{}/list/userName" containerType="SINGLE" label="userName" name="userName" type="string"/>
+<Field __index="6" __sourcePath="{}/list/userScreenName" containerType="SINGLE" label="userScreenName" name="userScreenName" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="110" __referenceCounter="0" __sourcePath="{}/list/mediaEntities" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="2839de30-145a-4fd4-9af9-196f9c1c8707" _parent_id="__parent_id" _type="Input" id="73bcc106-ad32-46ef-9157-f3fcedf10418">
+<Record fieldDelimiter="," name="mediaEntities" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="118" __sourcePath="{}/list/mediaEntities/URL" containerType="SINGLE" label="URL" name="URL" type="string"/>
+<Field __index="119" __sourcePath="{}/list/mediaEntities/displayURL" containerType="SINGLE" label="displayURL" name="displayURL" type="string"/>
+<Field __index="120" __sourcePath="{}/list/mediaEntities/end" containerType="SINGLE" label="end" name="end" type="integer"/>
+<Field __index="121" __sourcePath="{}/list/mediaEntities/expandedURL" containerType="SINGLE" label="expandedURL" name="expandedURL" type="string"/>
+<Field __index="110" __sourcePath="{}/list/mediaEntities/id" containerType="SINGLE" label="id" name="id" type="long"/>
+<Field __index="111" __sourcePath="{}/list/mediaEntities/mediaURL" containerType="SINGLE" label="mediaURL" name="mediaURL" type="string"/>
+<Field __index="112" __sourcePath="{}/list/mediaEntities/mediaURLHttps" containerType="SINGLE" label="mediaURLHttps" name="mediaURLHttps" type="string"/>
+<Field __index="122" __sourcePath="{}/list/mediaEntities/start" containerType="SINGLE" label="start" name="start" type="integer"/>
+<Field __index="117" __sourcePath="{}/list/mediaEntities/type" containerType="SINGLE" label="type" name="type" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="113" __referenceCounter="0" __sourcePath="{}/list/mediaEntities/sizes" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="73bcc106-ad32-46ef-9157-f3fcedf10418" _parent_id="__parent_id" _type="Input" id="f0e9bece-f3a4-4b48-b2f6-9b42f4f39dcd">
+<Record fieldDelimiter="," name="sizes" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="113" __sourcePath="{}/list/mediaEntities/sizes/key" containerType="SINGLE" label="key" name="key" type="integer"/>
+<Field __index="114" __sourcePath="{}/list/mediaEntities/sizes/value/height" containerType="SINGLE" label="height" name="height" type="integer"/>
+<Field __index="115" __sourcePath="{}/list/mediaEntities/sizes/value/resize" containerType="SINGLE" label="resize" name="resize" type="integer"/>
+<Field __index="116" __sourcePath="{}/list/mediaEntities/sizes/value/width" containerType="SINGLE" label="width" name="width" type="integer"/>
+</Record>
+</Metadata>
+<Metadata __index="102" __referenceCounter="0" __sourcePath="{}/list/URLEntities" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="2839de30-145a-4fd4-9af9-196f9c1c8707" _parent_id="__parent_id" _type="Input" id="2445c071-2d0a-4bb4-9cb0-e72efc4b4f56">
+<Record fieldDelimiter="," name="URLEntities" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="102" __sourcePath="{}/list/URLEntities/URL" containerType="SINGLE" label="URL" name="URL" type="string"/>
+<Field __index="103" __sourcePath="{}/list/URLEntities/displayURL" containerType="SINGLE" label="displayURL" name="displayURL" type="string"/>
+<Field __index="104" __sourcePath="{}/list/URLEntities/end" containerType="SINGLE" label="end" name="end" type="integer"/>
+<Field __index="105" __sourcePath="{}/list/URLEntities/expandedURL" containerType="SINGLE" label="expandedURL" name="expandedURL" type="string"/>
+<Field __index="106" __sourcePath="{}/list/URLEntities/start" containerType="SINGLE" label="start" name="start" type="integer"/>
+</Record>
+</Metadata>
+<Metadata __index="123" __referenceCounter="1" __sourcePath="{}/list/userMentionEntities" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="2839de30-145a-4fd4-9af9-196f9c1c8707" _parent_id="__parent_id" _type="Input" id="39aa59c0-4f5f-4319-b443-d303ccf2c273">
+<Record fieldDelimiter="," name="userMentionEntities" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="123" __sourcePath="{}/list/userMentionEntities/end" containerType="SINGLE" label="end" name="end" type="integer"/>
+<Field __index="124" __sourcePath="{}/list/userMentionEntities/id" containerType="SINGLE" label="id" name="id" type="long"/>
+<Field __index="125" __sourcePath="{}/list/userMentionEntities/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="126" __sourcePath="{}/list/userMentionEntities/screenName" containerType="SINGLE" label="screenName" name="screenName" type="string"/>
+<Field __index="127" __sourcePath="{}/list/userMentionEntities/start" containerType="SINGLE" label="start" name="start" type="integer"/>
+</Record>
+</Metadata>
+<Dictionary>
+<Entry id="DictionaryEntry0" input="true" name="inputPayload" output="false" type="object"/>
+<Entry id="DictionaryEntry1" input="false" name="outputPayload" output="true" type="object"/>
+</Dictionary>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" fileURL="dict:inputPayload" guiName="Pojo READER" guiX="20" guiY="20" id="BEAN_READER0" type="BEAN_READER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context outPort="0" sequenceField="__id" xpath=".">
+  <Mapping cloverField="accessLevel_2" trim="true" xpath="accessLevel"/>
+  <Mapping cloverField="contributors" trim="true" xpath="contributors"/>
+  <Mapping cloverField="createdAt" trim="true" xpath="createdAt"/>
+  <Mapping cloverField="currentUserRetweetId" trim="true" xpath="currentUserRetweetId"/>
+  <Mapping cloverField="favorited" trim="true" xpath="favorited"/>
+  <Mapping cloverField="latitude" trim="true" xpath="geoLocation/latitude"/>
+  <Mapping cloverField="longitude" trim="true" xpath="geoLocation/longitude"/>
+  <Mapping cloverField="id" trim="true" xpath="id"/>
+  <Mapping cloverField="inReplyToScreenName" trim="true" xpath="inReplyToScreenName"/>
+  <Mapping cloverField="inReplyToStatusId" trim="true" xpath="inReplyToStatusId"/>
+  <Mapping cloverField="inReplyToUserId" trim="true" xpath="inReplyToUserId"/>
+  <Mapping cloverField="URL" trim="true" xpath="place/URL"/>
+  <Mapping cloverField="accessLevel" trim="true" xpath="place/accessLevel"/>
+  <Mapping cloverField="boundingBoxType" trim="true" xpath="place/boundingBoxType"/>
+  <Mapping cloverField="country" trim="true" xpath="place/country"/>
+  <Mapping cloverField="countryCode" trim="true" xpath="place/countryCode"/>
+  <Mapping cloverField="fullName" trim="true" xpath="place/fullName"/>
+  <Mapping cloverField="geometryType" trim="true" xpath="place/geometryType"/>
+  <Mapping cloverField="id_1" trim="true" xpath="place/id"/>
+  <Mapping cloverField="name" trim="true" xpath="place/name"/>
+  <Mapping cloverField="placeType" trim="true" xpath="place/placeType"/>
+  <Mapping cloverField="limit" trim="true" xpath="place/rateLimitStatus/limit"/>
+  <Mapping cloverField="remaining" trim="true" xpath="place/rateLimitStatus/remaining"/>
+  <Mapping cloverField="remainingHits" trim="true" xpath="place/rateLimitStatus/remainingHits"/>
+  <Mapping cloverField="resetTimeInSeconds" trim="true" xpath="place/rateLimitStatus/resetTimeInSeconds"/>
+  <Mapping cloverField="secondsUntilReset" trim="true" xpath="place/rateLimitStatus/secondsUntilReset"/>
+  <Mapping cloverField="streetAddress" trim="true" xpath="place/streetAddress"/>
+  <Mapping cloverField="possiblySensitive" trim="true" xpath="possiblySensitive"/>
+  <Mapping cloverField="limit_2" trim="true" xpath="rateLimitStatus/limit"/>
+  <Mapping cloverField="remaining_2" trim="true" xpath="rateLimitStatus/remaining"/>
+  <Mapping cloverField="remainingHits_2" trim="true" xpath="rateLimitStatus/remainingHits"/>
+  <Mapping cloverField="resetTimeInSeconds_2" trim="true" xpath="rateLimitStatus/resetTimeInSeconds"/>
+  <Mapping cloverField="secondsUntilReset_2" trim="true" xpath="rateLimitStatus/secondsUntilReset"/>
+  <Mapping cloverField="retweet" trim="true" xpath="retweet"/>
+  <Mapping cloverField="retweetCount" trim="true" xpath="retweetCount"/>
+  <Mapping cloverField="retweetedByMe" trim="true" xpath="retweetedByMe"/>
+  <Mapping cloverField="source" trim="true" xpath="source"/>
+  <Mapping cloverField="text" trim="true" xpath="text"/>
+  <Mapping cloverField="truncated" trim="true" xpath="truncated"/>
+  <Mapping cloverField="URL_1" trim="true" xpath="user/URL"/>
+  <Mapping cloverField="URL_2" trim="true" xpath="user/URLEntity/URL"/>
+  <Mapping cloverField="displayURL" trim="true" xpath="user/URLEntity/displayURL"/>
+  <Mapping cloverField="end" trim="true" xpath="user/URLEntity/end"/>
+  <Mapping cloverField="expandedURL" trim="true" xpath="user/URLEntity/expandedURL"/>
+  <Mapping cloverField="start" trim="true" xpath="user/URLEntity/start"/>
+  <Mapping cloverField="accessLevel_1" trim="true" xpath="user/accessLevel"/>
+  <Mapping cloverField="biggerProfileImageURL" trim="true" xpath="user/biggerProfileImageURL"/>
+  <Mapping cloverField="biggerProfileImageURLHttps" trim="true" xpath="user/biggerProfileImageURLHttps"/>
+  <Mapping cloverField="contributorsEnabled" trim="true" xpath="user/contributorsEnabled"/>
+  <Mapping cloverField="createdAt_1" trim="true" xpath="user/createdAt"/>
+  <Mapping cloverField="description" trim="true" xpath="user/description"/>
+  <Mapping cloverField="favouritesCount" trim="true" xpath="user/favouritesCount"/>
+  <Mapping cloverField="followRequestSent" trim="true" xpath="user/followRequestSent"/>
+  <Mapping cloverField="followersCount" trim="true" xpath="user/followersCount"/>
+  <Mapping cloverField="friendsCount" trim="true" xpath="user/friendsCount"/>
+  <Mapping cloverField="geoEnabled" trim="true" xpath="user/geoEnabled"/>
+  <Mapping cloverField="id_2" trim="true" xpath="user/id"/>
+  <Mapping cloverField="lang" trim="true" xpath="user/lang"/>
+  <Mapping cloverField="listedCount" trim="true" xpath="user/listedCount"/>
+  <Mapping cloverField="location" trim="true" xpath="user/location"/>
+  <Mapping cloverField="miniProfileImageURL" trim="true" xpath="user/miniProfileImageURL"/>
+  <Mapping cloverField="miniProfileImageURLHttps" trim="true" xpath="user/miniProfileImageURLHttps"/>
+  <Mapping cloverField="name_1" trim="true" xpath="user/name"/>
+  <Mapping cloverField="originalProfileImageURL" trim="true" xpath="user/originalProfileImageURL"/>
+  <Mapping cloverField="originalProfileImageURLHttps" trim="true" xpath="user/originalProfileImageURLHttps"/>
+  <Mapping cloverField="profileBackgroundColor" trim="true" xpath="user/profileBackgroundColor"/>
+  <Mapping cloverField="profileBackgroundImageURL" trim="true" xpath="user/profileBackgroundImageURL"/>
+  <Mapping cloverField="profileBackgroundImageUrl" trim="true" xpath="user/profileBackgroundImageUrl"/>
+  <Mapping cloverField="profileBackgroundImageUrlHttps" trim="true" xpath="user/profileBackgroundImageUrlHttps"/>
+  <Mapping cloverField="profileBackgroundTiled" trim="true" xpath="user/profileBackgroundTiled"/>
+  <Mapping cloverField="profileBannerIPadRetinaURL" trim="true" xpath="user/profileBannerIPadRetinaURL"/>
+  <Mapping cloverField="profileBannerIPadURL" trim="true" xpath="user/profileBannerIPadURL"/>
+  <Mapping cloverField="profileBannerMobileRetinaURL" trim="true" xpath="user/profileBannerMobileRetinaURL"/>
+  <Mapping cloverField="profileBannerMobileURL" trim="true" xpath="user/profileBannerMobileURL"/>
+  <Mapping cloverField="profileBannerRetinaURL" trim="true" xpath="user/profileBannerRetinaURL"/>
+  <Mapping cloverField="profileBannerURL" trim="true" xpath="user/profileBannerURL"/>
+  <Mapping cloverField="profileImageURL" trim="true" xpath="user/profileImageURL"/>
+  <Mapping cloverField="profileImageURLHttps" trim="true" xpath="user/profileImageURLHttps"/>
+  <Mapping cloverField="profileImageUrlHttps" trim="true" xpath="user/profileImageUrlHttps"/>
+  <Mapping cloverField="profileLinkColor" trim="true" xpath="user/profileLinkColor"/>
+  <Mapping cloverField="profileSidebarBorderColor" trim="true" xpath="user/profileSidebarBorderColor"/>
+  <Mapping cloverField="profileSidebarFillColor" trim="true" xpath="user/profileSidebarFillColor"/>
+  <Mapping cloverField="profileTextColor" trim="true" xpath="user/profileTextColor"/>
+  <Mapping cloverField="profileUseBackgroundImage" trim="true" xpath="user/profileUseBackgroundImage"/>
+  <Mapping cloverField="protected" trim="true" xpath="user/protected"/>
+  <Mapping cloverField="limit_1" trim="true" xpath="user/rateLimitStatus/limit"/>
+  <Mapping cloverField="remaining_1" trim="true" xpath="user/rateLimitStatus/remaining"/>
+  <Mapping cloverField="remainingHits_1" trim="true" xpath="user/rateLimitStatus/remainingHits"/>
+  <Mapping cloverField="resetTimeInSeconds_1" trim="true" xpath="user/rateLimitStatus/resetTimeInSeconds"/>
+  <Mapping cloverField="secondsUntilReset_1" trim="true" xpath="user/rateLimitStatus/secondsUntilReset"/>
+  <Mapping cloverField="screenName" trim="true" xpath="user/screenName"/>
+  <Mapping cloverField="showAllInlineMedia" trim="true" xpath="user/showAllInlineMedia"/>
+  <Mapping cloverField="statusesCount" trim="true" xpath="user/statusesCount"/>
+  <Mapping cloverField="timeZone" trim="true" xpath="user/timeZone"/>
+  <Mapping cloverField="translator" trim="true" xpath="user/translator"/>
+  <Mapping cloverField="utcOffset" trim="true" xpath="user/utcOffset"/>
+  <Mapping cloverField="verified" trim="true" xpath="user/verified"/>
+  <Context generatedKey="__parent_id" outPort="1" parentKey="__id" sequenceField="__id" xpath="userMentionEntities">
+    <Mapping cloverField="end" trim="true" xpath="end"/>
+    <Mapping cloverField="id" trim="true" xpath="id"/>
+    <Mapping cloverField="name" trim="true" xpath="name"/>
+    <Mapping cloverField="screenName" trim="true" xpath="screenName"/>
+    <Mapping cloverField="start" trim="true" xpath="start"/>
+  </Context>
+</Context>
+]]></attr>
+<attr name="_data_format"><![CDATA[JAVA]]></attr>
+<attr name="schema"><![CDATA[<?xml version="1.0" encoding="UTF-8"?><schema-object>
+  <schema-collection>
+    <typed-object-ref type-ref="twitter4j.Status"/>
+  </schema-collection>
+  <typed-object type="twitter4j.HashtagEntity">
+    <typed-object-ref name="end" type-ref="int"/>
+    <typed-object-ref name="start" type-ref="int"/>
+    <typed-object-ref name="text" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="twitter4j.GeoLocation">
+    <typed-object-ref name="latitude" type-ref="double"/>
+    <typed-object-ref name="longitude" type-ref="double"/>
+  </typed-object>
+  <typed-object type="int"/>
+  <typed-object type="java.lang.Integer"/>
+  <typed-object type="java.lang.String"/>
+  <typed-object type="java.util.Date"/>
+  <typed-object type="long"/>
+  <typed-object type="double"/>
+  <typed-object type="twitter4j.RateLimitStatus">
+    <typed-object-ref name="limit" type-ref="int"/>
+    <typed-object-ref name="remaining" type-ref="int"/>
+    <typed-object-ref name="remainingHits" type-ref="int"/>
+    <typed-object-ref name="resetTimeInSeconds" type-ref="int"/>
+    <typed-object-ref name="secondsUntilReset" type-ref="int"/>
+  </typed-object>
+  <typed-object type="twitter4j.Status">
+    <schema-collection array="true" name="contributors">
+      <typed-object-ref type-ref="long"/>
+    </schema-collection>
+    <typed-object-ref name="createdAt" type-ref="java.util.Date"/>
+    <typed-object-ref name="currentUserRetweetId" type-ref="long"/>
+    <typed-object-ref name="favorited" type-ref="boolean"/>
+    <typed-object-ref name="geoLocation" type-ref="twitter4j.GeoLocation"/>
+    <typed-object-ref name="id" type-ref="long"/>
+    <typed-object-ref name="inReplyToScreenName" type-ref="java.lang.String"/>
+    <typed-object-ref name="inReplyToStatusId" type-ref="long"/>
+    <typed-object-ref name="inReplyToUserId" type-ref="long"/>
+    <typed-object-ref name="place" type-ref="twitter4j.Place"/>
+    <typed-object-ref name="possiblySensitive" type-ref="boolean"/>
+    <typed-object-ref name="retweet" type-ref="boolean"/>
+    <typed-object-ref name="retweetCount" type-ref="long"/>
+    <typed-object-ref name="retweetedByMe" type-ref="boolean"/>
+    <typed-object-ref name="retweetedStatus" type-ref="twitter4j.Status"/>
+    <typed-object-ref name="source" type-ref="java.lang.String"/>
+    <typed-object-ref name="text" type-ref="java.lang.String"/>
+    <typed-object-ref name="truncated" type-ref="boolean"/>
+    <typed-object-ref name="user" type-ref="twitter4j.User"/>
+    <typed-object-ref name="accessLevel" type-ref="int"/>
+    <typed-object-ref name="rateLimitStatus" type-ref="twitter4j.RateLimitStatus"/>
+    <schema-collection array="true" name="URLEntities">
+      <typed-object-ref type-ref="twitter4j.URLEntity"/>
+    </schema-collection>
+    <schema-collection array="true" name="hashtagEntities">
+      <typed-object-ref type-ref="twitter4j.HashtagEntity"/>
+    </schema-collection>
+    <schema-collection array="true" name="mediaEntities">
+      <typed-object-ref type-ref="twitter4j.MediaEntity"/>
+    </schema-collection>
+    <schema-collection array="true" name="userMentionEntities">
+      <typed-object-ref type-ref="twitter4j.UserMentionEntity"/>
+    </schema-collection>
+  </typed-object>
+  <typed-object type="twitter4j.UserMentionEntity">
+    <typed-object-ref name="end" type-ref="int"/>
+    <typed-object-ref name="id" type-ref="long"/>
+    <typed-object-ref name="name" type-ref="java.lang.String"/>
+    <typed-object-ref name="screenName" type-ref="java.lang.String"/>
+    <typed-object-ref name="start" type-ref="int"/>
+  </typed-object>
+  <typed-object type="twitter4j.MediaEntity">
+    <typed-object-ref name="id" type-ref="long"/>
+    <typed-object-ref name="mediaURL" type-ref="java.lang.String"/>
+    <typed-object-ref name="mediaURLHttps" type-ref="java.lang.String"/>
+    <schema-map name="sizes" type="java.util.Map">
+      <typed-object-ref type-ref="java.lang.Integer"/>
+      <typed-object-ref type-ref="twitter4j.MediaEntity$Size"/>
+    </schema-map>
+    <typed-object-ref name="type" type-ref="java.lang.String"/>
+    <typed-object-ref name="URL" type-ref="java.lang.String"/>
+    <typed-object-ref name="displayURL" type-ref="java.lang.String"/>
+    <typed-object-ref name="end" type-ref="int"/>
+    <typed-object-ref name="expandedURL" type-ref="java.lang.String"/>
+    <typed-object-ref name="start" type-ref="int"/>
+  </typed-object>
+  <typed-object type="twitter4j.MediaEntity$Size">
+    <typed-object-ref name="height" type-ref="int"/>
+    <typed-object-ref name="resize" type-ref="int"/>
+    <typed-object-ref name="width" type-ref="int"/>
+  </typed-object>
+  <typed-object type="java.net.URL"/>
+  <typed-object type="twitter4j.URLEntity">
+    <typed-object-ref name="URL" type-ref="java.lang.String"/>
+    <typed-object-ref name="displayURL" type-ref="java.lang.String"/>
+    <typed-object-ref name="end" type-ref="int"/>
+    <typed-object-ref name="expandedURL" type-ref="java.lang.String"/>
+    <typed-object-ref name="start" type-ref="int"/>
+  </typed-object>
+  <typed-object type="twitter4j.Place">
+    <typed-object-ref name="URL" type-ref="java.lang.String"/>
+    <schema-collection array="true" name="boundingBoxCoordinates">
+      <schema-collection array="true">
+        <typed-object-ref type-ref="twitter4j.GeoLocation"/>
+      </schema-collection>
+    </schema-collection>
+    <typed-object-ref name="boundingBoxType" type-ref="java.lang.String"/>
+    <schema-collection array="true" name="containedWithIn">
+      <typed-object-ref type-ref="twitter4j.Place"/>
+    </schema-collection>
+    <typed-object-ref name="country" type-ref="java.lang.String"/>
+    <typed-object-ref name="countryCode" type-ref="java.lang.String"/>
+    <typed-object-ref name="fullName" type-ref="java.lang.String"/>
+    <schema-collection array="true" name="geometryCoordinates">
+      <schema-collection array="true">
+        <typed-object-ref type-ref="twitter4j.GeoLocation"/>
+      </schema-collection>
+    </schema-collection>
+    <typed-object-ref name="geometryType" type-ref="java.lang.String"/>
+    <typed-object-ref name="id" type-ref="java.lang.String"/>
+    <typed-object-ref name="name" type-ref="java.lang.String"/>
+    <typed-object-ref name="placeType" type-ref="java.lang.String"/>
+    <typed-object-ref name="streetAddress" type-ref="java.lang.String"/>
+    <typed-object-ref name="accessLevel" type-ref="int"/>
+    <typed-object-ref name="rateLimitStatus" type-ref="twitter4j.RateLimitStatus"/>
+  </typed-object>
+  <typed-object type="boolean"/>
+  <typed-object type="twitter4j.User">
+    <typed-object-ref name="URL" type-ref="java.lang.String"/>
+    <typed-object-ref name="URLEntity" type-ref="twitter4j.URLEntity"/>
+    <typed-object-ref name="biggerProfileImageURL" type-ref="java.lang.String"/>
+    <typed-object-ref name="biggerProfileImageURLHttps" type-ref="java.lang.String"/>
+    <typed-object-ref name="contributorsEnabled" type-ref="boolean"/>
+    <typed-object-ref name="createdAt" type-ref="java.util.Date"/>
+    <typed-object-ref name="description" type-ref="java.lang.String"/>
+    <schema-collection array="true" name="descriptionURLEntities">
+      <typed-object-ref type-ref="twitter4j.URLEntity"/>
+    </schema-collection>
+    <typed-object-ref name="favouritesCount" type-ref="int"/>
+    <typed-object-ref name="followRequestSent" type-ref="boolean"/>
+    <typed-object-ref name="followersCount" type-ref="int"/>
+    <typed-object-ref name="friendsCount" type-ref="int"/>
+    <typed-object-ref name="geoEnabled" type-ref="boolean"/>
+    <typed-object-ref name="id" type-ref="long"/>
+    <typed-object-ref name="lang" type-ref="java.lang.String"/>
+    <typed-object-ref name="listedCount" type-ref="int"/>
+    <typed-object-ref name="location" type-ref="java.lang.String"/>
+    <typed-object-ref name="miniProfileImageURL" type-ref="java.lang.String"/>
+    <typed-object-ref name="miniProfileImageURLHttps" type-ref="java.lang.String"/>
+    <typed-object-ref name="name" type-ref="java.lang.String"/>
+    <typed-object-ref name="originalProfileImageURL" type-ref="java.lang.String"/>
+    <typed-object-ref name="originalProfileImageURLHttps" type-ref="java.lang.String"/>
+    <typed-object-ref name="profileBackgroundColor" type-ref="java.lang.String"/>
+    <typed-object-ref name="profileBackgroundImageURL" type-ref="java.lang.String"/>
+    <typed-object-ref name="profileBackgroundImageUrl" type-ref="java.lang.String"/>
+    <typed-object-ref name="profileBackgroundImageUrlHttps" type-ref="java.lang.String"/>
+    <typed-object-ref name="profileBackgroundTiled" type-ref="boolean"/>
+    <typed-object-ref name="profileBannerIPadRetinaURL" type-ref="java.lang.String"/>
+    <typed-object-ref name="profileBannerIPadURL" type-ref="java.lang.String"/>
+    <typed-object-ref name="profileBannerMobileRetinaURL" type-ref="java.lang.String"/>
+    <typed-object-ref name="profileBannerMobileURL" type-ref="java.lang.String"/>
+    <typed-object-ref name="profileBannerRetinaURL" type-ref="java.lang.String"/>
+    <typed-object-ref name="profileBannerURL" type-ref="java.lang.String"/>
+    <typed-object-ref name="profileImageURL" type-ref="java.lang.String"/>
+    <typed-object-ref name="profileImageURLHttps" type-ref="java.lang.String"/>
+    <typed-object-ref name="profileImageUrlHttps" type-ref="java.net.URL"/>
+    <typed-object-ref name="profileLinkColor" type-ref="java.lang.String"/>
+    <typed-object-ref name="profileSidebarBorderColor" type-ref="java.lang.String"/>
+    <typed-object-ref name="profileSidebarFillColor" type-ref="java.lang.String"/>
+    <typed-object-ref name="profileTextColor" type-ref="java.lang.String"/>
+    <typed-object-ref name="profileUseBackgroundImage" type-ref="boolean"/>
+    <typed-object-ref name="protected" type-ref="boolean"/>
+    <typed-object-ref name="screenName" type-ref="java.lang.String"/>
+    <typed-object-ref name="showAllInlineMedia" type-ref="boolean"/>
+    <typed-object-ref name="status" type-ref="twitter4j.Status"/>
+    <typed-object-ref name="statusesCount" type-ref="int"/>
+    <typed-object-ref name="timeZone" type-ref="java.lang.String"/>
+    <typed-object-ref name="translator" type-ref="boolean"/>
+    <typed-object-ref name="utcOffset" type-ref="int"/>
+    <typed-object-ref name="verified" type-ref="boolean"/>
+    <typed-object-ref name="accessLevel" type-ref="int"/>
+    <typed-object-ref name="rateLimitStatus" type-ref="twitter4j.RateLimitStatus"/>
+  </typed-object>
+</schema-object>
+]]></attr>
+<attr name="__metadata"><![CDATA[true]]></attr>
+</Node>
+<Node cacheInMemory="true" enabled="enabled" fileURL="dict:outputPayload" guiName="Pojo WRITER" guiX="900" guiY="20" id="BEAN_WRITER0" type="BEAN_WRITER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<clover:collection clover:name="list" xmlns:clover="http://www.cloveretl.com/ns/xmlmapping">
+  <item clover:inPort="0">
+    <createdDate>$0.createdDate</createdDate>
+    <id>$0.id</id>
+    <name>$0.name</name>
+    <screenName>$0.screenName</screenName>
+    <userId>$0.userId</userId>
+    <userName>$0.userName</userName>
+    <userScreenName>$0.userScreenName</userScreenName>
+  </item>
+  <item clover:inPort="1">
+    <createdDate>$1.createdDate</createdDate>
+    <id>$1.id</id>
+    <name>$1.name</name>
+    <screenName>$1.screenName</screenName>
+    <userId>$1.userId</userId>
+    <userName>$1.userName</userName>
+    <userScreenName>$1.userScreenName</userScreenName>
+  </item>
+</clover:collection>]]></attr>
+<attr name="_data_format"><![CDATA[JAVA]]></attr>
+<attr name="schema"><![CDATA[<?xml version="1.0" encoding="UTF-8"?><schema-object>
+  <schema-collection>
+    <typed-object-ref type-ref="com.ww.bean.TweetDetails"/>
+  </schema-collection>
+  <typed-object type="com.ww.bean.TweetDetails">
+    <typed-object-ref name="createdDate" type-ref="java.util.Date"/>
+    <typed-object-ref name="id" type-ref="java.lang.String"/>
+    <typed-object-ref name="name" type-ref="java.lang.String"/>
+    <typed-object-ref name="screenName" type-ref="java.lang.String"/>
+    <typed-object-ref name="userId" type-ref="java.lang.String"/>
+    <typed-object-ref name="userName" type-ref="java.lang.String"/>
+    <typed-object-ref name="userScreenName" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="java.lang.String"/>
+  <typed-object type="java.util.Date"/>
+</schema-object>
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Foreach 'list' -&gt; 'list'" guiX="460" guiY="20" id="FOREACH_LIST_LIST" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+//END -> DO NOT REMOVE
+output.createdDate = input.createdAt;
+output.userId = num2str(input.id_2);
+output.userName = input.name_1;
+output.userScreenName = input.screenName;]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Foreach 'userMentionEntities' -&gt; 'list'" guiX="460" guiY="120" id="FOREACH_USER_MENTION_ENTITIES_LIST" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+//END -> DO NOT REMOVE
+output.id = num2str(input.id) + num2str(input.id);
+output.name = input.name + input.name;
+output.screenName = input.screenName;
+]]></attr>
+</Node>
+<Edge debugMode="true" fromNode="BEAN_READER0:0" guiBendpoints="" id="Edge0" inPort="Port 0 (in)" metadata="2839de30-145a-4fd4-9af9-196f9c1c8707" outPort="Port 0 (out)" toNode="FOREACH_LIST_LIST:0"/>
+<Edge debugMode="true" fromNode="BEAN_READER0:1" guiBendpoints="" id="Edge2" inPort="Port 0 (in)" metadata="39aa59c0-4f5f-4319-b443-d303ccf2c273" outPort="Port 1 (out)" toNode="FOREACH_USER_MENTION_ENTITIES_LIST:0"/>
+<Edge debugMode="true" fromNode="FOREACH_LIST_LIST:0" guiBendpoints="" id="Edge1" inPort="Port 0 (in)" metadata="db3f7013-1f88-42a9-8464-e56d3ee40b1d" outPort="Port 0 (out)" toNode="BEAN_WRITER0:0"/>
+<Edge debugMode="true" fromNode="FOREACH_USER_MENTION_ENTITIES_LIST:0" guiBendpoints="" id="Edge3" inPort="Port 1 (in)" metadata="db3f7013-1f88-42a9-8464-e56d3ee40b1d" outPort="Port 0 (out)" toNode="BEAN_WRITER0:1"/>
+</Phase>
+</Graph>

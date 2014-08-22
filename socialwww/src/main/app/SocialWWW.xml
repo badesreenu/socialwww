@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+<mule xmlns:data-mapper="http://www.mulesoft.org/schema/mule/ee/data-mapper" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:linkedin="http://www.mulesoft.org/schema/mule/linkedin" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:twitter="http://www.mulesoft.org/schema/mule/twitter" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
 	xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.5.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
-http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd"></mule>
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/linkedin http://www.mulesoft.org/schema/mule/linkedin/current/mule-linkedin.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/twitter http://www.mulesoft.org/schema/mule/twitter/current/mule-twitter.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/ee/data-mapper http://www.mulesoft.org/schema/mule/ee/data-mapper/current/mule-data-mapper.xsd">
+    <data-mapper:config name="List_Status__To_Pojo" transformationGraphPath="list_status__to_pojo.grf" doc:name="List_Status__To_Pojo"/>
+    <flow name="SocialWWWFlow1" doc:name="SocialWWWFlow1">
+        <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8081" doc:name="HTTP"/>
+        <scatter-gather doc:name="Scatter-Gather">
+            <processor-chain>
+                <flow-ref name="TwitterTweetsFlow1" doc:name="Flow Reference"/>
+                <flow-ref name="ListStatusToListPojo" doc:name="Flow Reference"/>
+            </processor-chain>
+            <processor-chain>
+                <flow-ref name="TwitterTweetsFlow2" doc:name="Flow Reference"/>
+                <flow-ref name="ListStatusToListPojo" doc:name="Flow Reference"/>
+            </processor-chain>
+            <processor-chain>
+                <flow-ref name="TwitterTweetsFlow3" doc:name="Flow Reference"/>
+                <flow-ref name="ListStatusToListPojo" doc:name="Flow Reference"/>
+            </processor-chain>
+        </scatter-gather>
+        <custom-transformer class="com.ww.transformer.TweetsTransformer" doc:name="Java"/>
+        <json:object-to-json-transformer doc:name="Object to JSON"/>
+        <logger message="Message is : #[payload]" level="INFO" doc:name="Logger"/>
+    </flow>
+    <sub-flow name="ListStatusToListPojo" doc:name="ListStatusToListPojo">
+        <data-mapper:transform config-ref="List_Status__To_Pojo" doc:name="List&lt;Status&gt; To Pojo"/>
+    </sub-flow>
+</mule>
